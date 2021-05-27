@@ -6,6 +6,9 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
+use ArrayParser;
+
+
 
 class InputParserCommand extends Command
 {
@@ -21,8 +24,11 @@ class InputParserCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $input = $input->getArgument('input_text');
+     
+        $test = new ArrayParser;
+        $result = $test->parse($input);
 
-        var_dump($input);
+        var_dump($result);
         /**************
          * Todo: Implement something that creates all extracted features from given input
          **************/
