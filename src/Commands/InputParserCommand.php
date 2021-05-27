@@ -22,8 +22,11 @@ class InputParserCommand extends Command
     {
         $input = $input->getArgument('input_text');
 
+        var_dump($input);
         /**************
          * Todo: Implement something that creates all extracted features from given input
          **************/
+
+        return 0;
     }
 }
