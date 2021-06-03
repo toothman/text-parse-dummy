@@ -25,8 +25,7 @@ class InputParserCommand extends Command
     {
         $input = $input->getArgument('input_text');
      
-        $test = new ArrayParser;
-        $result = $test->parse($input);
+        $result = ArrayParser::parse($input);
 
         var_dump($result);
         /**************
