@@ -8,7 +8,7 @@ Commands
 
 - composer install :) 
 - php console.php parse-input "foo bar"
-- phpunit
+- phpunit (oder ./vendor/bin/phpunit)
 
 Aufgabenbeschreibung
 ===
